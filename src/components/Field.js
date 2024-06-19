@@ -15,8 +15,8 @@ class Field {
         this.el.className += ` checkers-field-${colorStr}`;
 
 
-        const num = row * game.config.cols + col;
-        this.num = num;
+        const num = row * game.config.cols + col; // criação da formula onde vai armazenar a coordenada de cada indice do tabuleiro row = indice da linha cow = indice da coluna
+        this.num = num;                           // o game.config.cols é onde estou definindo que o tabuleiro terá um total de 8 colunas (Que no caso é um tabuleiro 8x8)
         this.el.setAttribute('data-num', num);
 
     }
